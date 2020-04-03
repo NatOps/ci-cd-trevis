@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python:3.6
 #MAINTAINER Natalia Raythz "nraythz@gmail.com"
 RUN mkdir /app
 COPY requirements.txt /app

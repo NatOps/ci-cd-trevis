@@ -1,6 +1,7 @@
 sudo: required
 services:
   - docker
+language: python
 install:
   - pip install -r requirements.txt
 # command to run tests
