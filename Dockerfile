@@ -1,10 +1,9 @@
-FROM python:3.6
+FROM ubuntu:latest
 #MAINTAINER Natalia Raythz "nraythz@gmail.com"
-RUN mkdir /app
-COPY requirements.txt /app
-RUN pip install -r /app/requirements.txt
+RUN apt-get update -y
+RUN apt-get install -y python-pip python-dev build-essential
 COPY . /app
 WORKDIR /app
-EXPOSE 5000
+RUN pip install -r requirements.txt
 ENTRYPOINT ["python"]
-CMD ["-m", "qa.app"]
+CMD ["qa/app.py"]
