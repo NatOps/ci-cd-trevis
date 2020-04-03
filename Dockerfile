@@ -1,5 +1,5 @@
 FROM python:3.8
-MAINTAINER Axel Sirota "axel.sirota@gmail.com"
+MAINTAINER Natalia Raythz "nraythz@gmail.com"
 RUN mkdir /app
 COPY requirements.txt /app
 RUN pip install -r /app/requirements.txt
